@@ -4,47 +4,53 @@
 	<title>Argan Tech</title>
 
 	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Semantic CSS -->
+	<link rel="stylesheet" type="text/css" href="css/semantic.css">
+
 	<!-- Site CSS -->
-	<link rel="stylsheet" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+<body>	
+
 	
-	<!-- Compressed CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" integrity="sha256-itWEYdFWzZPBG78bJOOiQIn06QCgN/F0wMDcC4nOhxY=" crossorigin="anonymous" />
 
-	<!-- Compressed JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
-</head>
-<body>
-
-	<nav>
-		<a href="#home">Argan Tech</a>
-		<div>
-			<a href="#about">Nosotros</a>
-			<a href="#team">Equipo</a>
-			<a href="#contact">Contacto</a>
+	<div class="ui inverted vertical masthead center aligned segment">
+		<div class="ui container">
+			<nav class="ui large secondary inverted pointing menu">
+				<div class="ui header item">
+		   			<a class="ui item" href="#home">Argan Tech</a>
+			  	</div>
+				<div class="right item">
+					<a class="ui item" href="#about">Nosotros</a>
+					<a class="ui item" href="#team">Equipo</a>
+					<a class="ui item" href="#contact">Contacto</a>
+				</div>
+			</nav>
 		</div>
-	</nav>
+		<header class="ui text container">
+			<h1 class="ui inverted header">
+				Argan Tech
+			</h1>
+			<h2>Nos dedicamos al Desarrollo de Software tanto Web como de Aplicaciones móviles</h2>
+		</header>
+	</div>
+	
+	<div class="ui container">
 
-	<header>
-		<h1>Argan Tech</h1>
-		<p>Nos dedicamos al Desarrollo de Software tanto Web como de Aplicaciones móviles</p>
-	</header>
-
-	<div>
-
-		<div>
+		<div class="ui vertical stripe segment">
 			<h2>Quiénes Somos</h2>
 			<p>Somos un grupo de profesionales de varios sectores diferentes de la infórmatica que nos juntamos para hacer en nuestro tiempo libre lo que más nos gusta, crear programas y solucionar problemas.</p>
 		</div>
 
-		<div>
+		<div class="ui vertical stripe segment">
 			<h2>Qué ofrecemos</h2>
 			<p>Una especial atención al cliente que nos permite entender de forma más clara que solución es la más adecuada en cada caso.</p>
 			<p>Tanto si necesita informatizar su negocio con una página web, un pequeño blog y una pequeña aplicación para su inventario como si quiere una aplicación móvil, somos capaces de afrontar cualquier problema y guiarle para que pueda decidir la opción más acertada.</p>
 		</div>
 
-		<div>
+		<div class="ui vertical stripe segment">
 			<h2>Nuestras herramientas</h2>
 			<p>En la actualidad hay diversas herramientas que nos permiten lograr el mismo objetivo. Nos gusta el uso de tecnologías modernas sin olvidarnos de las más viejas ya que por muchos años que tengan, siguen cumpliendo su tarea.</p>
 			<h3>Desarrollo Web</h3>
@@ -74,12 +80,12 @@
 			</ul>
 		</div>
 
-		<div>
+		<div class="ui vertical stripe segment">
 			<h2>Nuestros proyectos</h2>
 			<p>Esta es una recopilación de algunos de nuestros proyectos actuales y ya finalizados.</p>
 		</div>
 
-		<div>
+		<div class="ui vertical stripe segment">
 			<h2>Nuestro Equipo</h2>
 			<p>Nuestro equipo principal está formado por cuatro jóvenes interesados en el mundo de las tecnologías y con los objetivos muy claros.</p>
 			<ul>
@@ -104,14 +110,23 @@
 			</ul>
 		</div>
 
-		<div>
+		<div class="ui vertical stripe segment">
 			<h2>Contacto</h2>
 			<p>Si desea contactar con nosotros puede dejarnos un email rellenando el formulario más abajo.</p>
-			<form>
-				<input type="text" placeholder="Nombre" />
-				<input type="text" placeholder="Email" />
-				<input type="text" placeholder="Mensaje" />
-				<input type="submit">
+			<form class="ui form">
+				<div class="ui field">
+					<label>Nombre</label>
+					<input type="text" placeholder="Nombre" />
+				</div>
+				<div class="ui field">
+					<label>Email</label>
+					<input type="text" placeholder="Email" />
+				</div>
+				<div class="ui field">
+					<label>Mensaje</label>
+					<textarea></textarea>
+				</div>
+				<button class="ui button" type="submit">Enviar</button>
 			</form>
 			<h3>Redes Sociales</h3>
 			<p>Nos puedes alcanzar por las redes sociales si te viene mejor.</p>
@@ -121,10 +136,43 @@
 			</ul>
 		</div>
 
+		
 	</div>
+	<footer class="ui inverted vertical footer segment">
+		<div class="ui container">
+			<div class="ui stackable inverted divided equal height stackable grid">
+				<div class="three wide column">
+					<h4>Sobre Nosotros</h4>
+					<div class="ui inverted link list">
+						<a class="ui item" href="#">Sitemap</a>
+						<a class="ui item" href="#">Contacta con Nosotros</a>
+					</div>
+				</div>
+				<div class="three wide column">
+					<h4>Servicios</h4>
+					<div class="ui inverted link list">
+						<a class="ui item" href="#">Páginas Web</a>
+						<a class="ui item" href="#">Aplicaciones móviles</a>
+						<a class="ui item" href="#">Informatización de Negocio</a>
+					</div>
+				</div>
+				<div class="three wide column">
+					<h4>About</h4>
+				</div>
+			</div>
+		
+			<div class="ui aligned center">
+				<p>Argan Technologies © 2017  Todos los derechos reservados.</p>
+			</div>
 
-	<footer>
-		<p>Argan Technologies © 2017  Todos los derechos reservados.</p>
+		</div>
+
 	</footer>
+	<!-- Foundation 6 Scripts -->
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script src="js/semantic.js"></script>
 </body>
 </html>

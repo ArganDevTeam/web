@@ -1,6 +1,17 @@
-html {
-	height: 100%;
-}
-body {
+.masthead {
+  min-height: 700px; }
+  .masthead h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal; }
 
-}
+.ui.vertical.stripe {
+  padding: 8em 0em; }
+
+.footer.segment {
+  padding: 3em 0em; }
+  .footer.segment p {
+    padding: 1.5em 0em; }
+
+/*# sourceMappingURL=styles.css.map */
