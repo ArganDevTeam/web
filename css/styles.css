@@ -8,6 +8,10 @@
 
 .ui.vertical.stripe {
   padding: 8em 0em; }
+  .ui.vertical.stripe h2 {
+    font-size: 2em; }
+  .ui.vertical.stripe p {
+    font-size: 1.5em; }
 
 .footer.segment {
   padding: 3em 0em; }
