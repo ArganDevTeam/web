@@ -6,12 +6,25 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="Description" content="Using technology to make life better.">
 
+	<link rel="icon" href="img/logo.png">
 	<!-- Semantic CSS -->
 	<link rel="stylesheet" type="text/css" href="css/semantic.css">
 	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
 	<!-- Site CSS -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109023651-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-109023651-1');
+	</script>
+
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" 
 			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
@@ -24,51 +37,50 @@
 	  $(document)
 	    .ready(function() {
 	      // fix menu when passed
-	      $('.masthead')
-	        .visibility({
-	          once: false,
-	          onBottomPassed: function() {
-	            $('.fixed.menu').transition('fade in');
-	          },
-	          onBottomPassedReverse: function() {
-	            $('.fixed.menu').transition('fade out');
-	          }
-	        });
+			$('.masthead').visibility({
+			  once: false,
+			  onBottomPassed: function() {
+			    $('.fixed.menu').transition('fade in');
+			  },
+			  onBottomPassedReverse: function() {
+			    $('.fixed.menu').transition('fade out');
+			  }
+			});
 
-	      // create sidebar and attach to menu open
-	      $('.ui.sidebar')
-	        .sidebar('attach events', '.toc.item');
-	    });
+			// create sidebar and attach to menu open
+			$('.ui.sidebar').sidebar('attach events', '.toc.item');
+
+		});
     </script>
-<body class="pushable">
+<body class="pushable" name="home">
 	<div class="ui large top fixed menu transition hidden">
 		<div class="ui container">
-			<a class="active item">Home</a>
-			<a class="item">Nosotros</a>
-			<a class="item">Proyectos</a>
-			<a class="item">Equipo</a>
-			<a class="item">Contacto</a>
+			<a class="active item" href="#home">Hom</a>
+			<a class="item" href="#about">Nosotros</a>
+			<a class="item" href="#work">Proyectos</a>
+			<a class="item" href="#team">Equipo</a>
+			<a class="item" href="#contact">Contacto</a>
 		</div>
 	</div>
 
 	<!-- Sidebar Menu -->
 	<div class="ui vertical inverted sidebar menu left">
-		<a class="item">Home</a>
-		<a class="item">Nosotros</a>
-		<a class="item">Proyectos</a>
-		<a class="item">Equipo</a>
-		<a class="item">Contacto</a>
+		<a class="active item" href="#home">Homiee</a>
+		<a class="item" href="#about">Nosotros</a>
+		<a class="item" href="#work">Proyectos</a>
+		<a class="item" href="#team">Equipo</a>
+		<a class="item" href="#contact">Contacto</a>
 	</div>
 
 	<!-- Page Content -->
-	<div class="pusher">	
-		<div class="ui inverted vertical masthead center aligned segment">
+	<div class="pusher" >	
+		<div class="ui inverted vertical masthead center aligned segment" id="home">
 			<div class="ui container">
 				<nav class="ui large secondary inverted pointing menu">
 				  	<a class="toc item">
 				  		<i class="sidebar icon"></i>
 				  	</a>
-					<a class="active item" href="#home">Home</a>
+					<a class="active item" href="#home">Homes</a>
 					<a class="item" href="#about">Nosotros</a>
 					<a class="item" href="#work">Proyectos</a>
 					<a class="item" href="#team">Equipo</a>
@@ -76,213 +88,213 @@
 				</nav>
 			</div>
 			<header class="ui text container">
-				<h1 class="ui inverted header">
-					Argan Tech
-				</h1>
-				<h2>Nos dedicamos al Desarrollo de Software tanto Web como de Aplicaciones móviles</h2>
+				<h1 class="ui inverted header">ARGAN.tech</h1>
+				<h2>En Argan Tech nos dedicamos al Desarrollo de Software tanto Web como de Aplicaciones móviles</h2>
 			</header>
 		</div>
 		
-
-			<div class="ui vertical stripe segment">
-				<div class="ui text container">
-					<h2 class="ui header">
-						Quiénes Somos
-					</h2>
-					<p>
-						Somos un grupo de profesionales de varios sectores diferentes de la infórmatica que nos juntamos para hacer en nuestro tiempo libre lo que más nos gusta, crear programas y solucionar problemas.
-					</p>
-				</div>
-			</div>
-
-			<div class="ui vertical stripe segment">
-				<div class="ui text container">
-					<h2>
-						Qué ofrecemos
-					</h2>
-					<div class="ui raised segments">
-						<div class="ui segment padded">
-							<h3 class="ui header"><i class="cloud icon"></i>Desarrollo Web</h3>
-							<div class="ui horizontal list">
-								<div class="ui item">HTML</div>
-								<div class="ui item">CSS</div>
-								<div class="ui item">JavaScript</div>
-								<div class="ui item">PHP</div>
-								<div class="ui item">MySQL</div>
-								<div class="ui item">Apache</div>
-							</div>
+		<!-- About -->
+		<div class="ui vertical stripe segment" id="about">
+			<div class="ui text container">
+				<h2 class="ui header">Quiénes Somos</h2>
+				<p>
+					Argan Technologies es un grupo de profesionales de diferentes sectores de la infórmatica que nos juntamos para hacer lo que más nos gusta, solucionar problemas y crear programas.
+				</p> 
+				<p>
+					Una especial atención al cliente que nos permite entender de forma más clara que solución es la más adecuada en cada caso.
+				</p>
+				<div class="ui raised segments">
+					<div class="ui segment padded">
+						<h3 class="ui header"><i class="cloud icon"></i>Desarrollo Web</h3>
+						<div class="ui horizontal list">
+							<div class="ui item">HTML</div>
+							<div class="ui item">CSS</div>
+							<div class="ui item">JavaScript</div>
+							<div class="ui item">PHP</div>
+							<div class="ui item">MySQL</div>
+							<div class="ui item">Apache</div>
 						</div>
-						<div class="ui segment padded">
-							<h3 class="ui header"><i class="android icon"></i>Desarrollo Android</h3>
-							<div class="ui horizontal list">
-								<div class="ui item">Java</div>
-								<div class="ui item">Kotlin</div>
-								<div class="ui item">Android Studio</div>
-							</div>
+					</div>
+					<div class="ui segment padded">
+						<h3 class="ui header"><i class="android icon"></i>Desarrollo Android</h3>
+						<div class="ui horizontal list">
+							<div class="ui item">Java</div>
+							<div class="ui item">Kotlin</div>
+							<div class="ui item">Android Studio</div>
 						</div>
-						<div class="ui segment padded">
-							<h3 class="ui header"><i class="apple icon"></i>Desarrollo iOS</h3>
-							<div class="ui horizontal list">
-								<div class="ui item">Objective-C</div>
-								<div class="ui item">Swift</div>
-								<div class="ui item">XCode</div>
-							</div>
+					</div>
+					<div class="ui segment padded">
+						<h3 class="ui header"><i class="apple icon"></i>Desarrollo iOS</h3>
+						<div class="ui horizontal list">
+							<div class="ui item">Objective-C</div>
+							<div class="ui item">Swift</div>
+							<div class="ui item">XCode</div>
 						</div>
-						<div class="ui segment padded">
-							<h3 class="ui header"><i class="server icon"></i>Informatización de Negocios</h3>
-							<div class="ui horizontal list">
-								<div class="ui item">Odoo</div>
-							</div>
+					</div>
+					<div class="ui segment padded">
+						<h3 class="ui header"><i class="server icon"></i>Informatización de Negocios</h3>
+						<div class="ui horizontal list">
+							<div class="ui item">Odoo</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<div class="ui vertical stripe segment">
-				<div class="ui text container">
-					<h2>
-						Proyectos
-					</h2>
-					<p>
-						Esta es una recopilación de algunos de nuestros proyectos actuales y ya finalizados.
-					</p>
-					<div class="ui grid">
-						<div class="four wide column computer five wide column mobile">
-							<img class="ui small image" src="img/marcos-foto.jpg">
-						</div>
-						<div class="four wide column computer five wide column mobile">
-							<img class="ui small image" src="img/marcos-foto.jpg">
-						</div>
-						<div class="four wide column computer five wide column mobile">
-							<img class="ui small image" src="img/marcos-foto.jpg">
-						</div>
-						<div class="four wide column computer five wide column mobile">
-							<img class="ui small image" src="img/marcos-foto.jpg">
-						</div>
-						<div class="four wide column computer five wide column mobile">
-							<img class="ui small image" src="img/marcos-foto.jpg">
-						</div>
-						<div class="four wide column computer five wide column mobile">
-							<img class="ui small image" src="img/marcos-foto.jpg">
-						</div>
-						<div class="four wide column computer five wide column mobile">
-							<img class="ui small image" src="img/marcos-foto.jpg">
-						</div>
-						<div class="four wide column computer five wide column mobile">
-							<img class="ui small image" src="img/marcos-foto.jpg">
-						</div>
-						<div class="four wide column computer five wide column mobile">
-							<img class="ui small image" src="img/marcos-foto.jpg">
-						</div>
+		<!-- Work -->
+		<div class="ui vertical stripe segment" id="work">
+			<div class="ui text container">
+				<h2>
+					Proyectos
+				</h2>
+				<p>
+					Esta es una recopilación de algunos de nuestros proyectos actuales y ya finalizados.
+				</p>
+				<div class="ui centered grid">
+					<div class="four wide column computer five wide column mobile">
+						<img class="ui small image" src="img/marcos-foto.jpg">
+					</div>
+					<div class="four wide column computer five wide column mobile">
+						<img class="ui small image" src="img/marcos-foto.jpg">
+					</div>
+					<div class="four wide column computer five wide column mobile">
+						<img class="ui small image" src="img/marcos-foto.jpg">
+					</div>
+					<div class="four wide column computer five wide column mobile">
+						<img class="ui small image" src="img/marcos-foto.jpg">
+					</div>
+					<div class="four wide column computer five wide column mobile">
+						<img class="ui small image" src="img/marcos-foto.jpg">
+					</div>
+					<div class="four wide column computer five wide column mobile">
+						<img class="ui small image" src="img/marcos-foto.jpg">
+					</div>
+					<div class="four wide column computer five wide column mobile">
+						<img class="ui small image" src="img/marcos-foto.jpg">
+					</div>
+					<div class="four wide column computer five wide column mobile">
+						<img class="ui small image" src="img/marcos-foto.jpg">
+					</div>
+					<div class="four wide column computer five wide column mobile">
+						<img class="ui small image" src="img/marcos-foto.jpg">
 					</div>
 				</div>
 			</div>
-
-			<div class="ui vertical stripe segment">
-				<div class="ui text container">
-					<h2>Nuestro Equipo</h2>
-					<p>
-						Nuestro equipo principal está formado por cuatro jóvenes interesados en el mundo de las tecnologías y con los objetivos muy claros.
-					</p>
-					<div class="ui link cards">
-					  <div class="card">
-					    <div class="image">
-					      <img src="img/marcos-foto.jpg">
-					    </div>
-					    <div class="content">
-					      <div class="header">Marcos Stival</div>
-					      <div class="meta">
-					        <a>Co-founder</a>
-					      </div>
-					      <div class="description">
-					        Me gustan los trenes.
-					      </div>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <div class="image">
-					      <img src="img/marcos-foto.jpg">
-					    </div>
-					    <div class="content">
-					      <div class="header">Pablo Rojas</div>
-					      <div class="meta">
-					         <a>Co-founder</a>
-					      </div>
-					      <div class="description">
-					      Me gustan los trenes.
-					      </div>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <div class="image">
-					      <img src="img/marcos-foto.jpg">
-					    </div>
-					    <div class="content">
-					      <div class="header">Carlos Maraña</div>
-					      <div class="meta">
-					         <a>Co-founder</a>
-					      </div>
-					      <div class="description">
-					        Me gustan los trenes.
-					      </div>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <div class="image">
-					      <img src="img/marcos-foto.jpg">
-					    </div>
-					    <div class="content">
-					      <div class="header">Lucas Menéndez</div>
-					      <div class="meta">
-					         <a>Co-founder</a>
-					      </div>
-					      <div class="description">
-					        Me gustan los trenes.
-					      </div>
-					    </div>
-					  </div>
-					</div>
-				</div>
-			</div>
-
-			<div class="ui vertical stripe segment">
-				<div class="ui text container">
-					<h2>Contacto</h2>
-					<p>Si desea contactar con nosotros puede dejarnos un email rellenando el formulario más abajo.</p>
-					<form class="ui form"  method="POST">
-						<div class="ui field">
-							<label>Nombre</label>
-							<input type="text" placeholder="Nombre" name="name"/>
-						</div>
-						<div class="ui field">
-							<label>Email</label>
-							<input type="text" placeholder="Email" name="email"/>
-						</div>
-						<div class="ui field">
-							<label>Mensaje</label>
-							<textarea id="mail_message" name="message"></textarea>
-						</div>
-						<button onclick="sendMail()" class="ui button" type="submit">Enviar</button>
-					</form>
-				</div>
-			</div>
+		</div>
 		
+		<!-- Team -->
+		<div class="ui vertical stripe segment" id="team">
+			<div class="ui text container">
+				<h2>Nuestro Equipo</h2>
+				<p>
+					Nuestro equipo principal está formado por cuatro jóvenes interesados en el mundo de las tecnologías y con los objetivos muy claros.
+				</p>
+				<div class="ui link cards centered">
+				  <div class="card">
+				    <div class="image">
+				      <img src="img/marcos-foto.jpg">
+				    </div>
+				    <div class="content">
+				      <div class="header">Marcos Stival</div>
+				      <div class="meta">
+				        <a>Co-founder</a>
+				      </div>
+				      <div class="description">
+				        Duis aute irure dolor in reprehenderit in voluptate velit esse
+				      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="img/ferrero-foto.jpg">
+				    </div>
+				    <div class="content">
+				      <div class="header">Pablo Rojas</div>
+				      <div class="meta">
+				         <a>Co-founder</a>
+				      </div>
+				      <div class="description">
+				      Me gustan los trenes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				      consequat. 
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="img/marcos-foto.jpg">
+				    </div>
+				    <div class="content">
+				      <div class="header">Carlos Maraña</div>
+				      <div class="meta">
+				         <a>Co-founder</a>
+				      </div>
+				      <div class="description">
+				        Me gustan los trenes.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="img/ferrero-foto.jpg">
+				    </div>
+				    <div class="content">
+				      <div class="header">Lucas Menéndez</div>
+				      <div class="meta">
+				         <a>Co-founder</a>
+				      </div>
+				      <div class="description">
+				        Me gustan los trenes.
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact -->
+		<div class="ui vertical stripe segment" id="contact">
+			<div class="ui text container">
+				<h2>Contacto</h2>
+				<p>Si desea contactar con nosotros puede dejarnos un email rellenando el formulario más abajo.</p>
+				<form class="ui form"  method="POST">
+					<div class="ui field">
+						<label>Nombre</label>
+						<input type="text" placeholder="Nombre" name="name"/>
+					</div>
+					<div class="ui field">
+						<label>Email</label>
+						<input type="text" placeholder="Email" name="email"/>
+					</div>
+					<div class="ui field">
+						<label>Mensaje</label>
+						<textarea id="mail_message" name="message" placeholder="Escribe tu mensaje aquí..."></textarea>
+					</div>
+					<button onclick="sendMail()" class="ui button" type="submit">Enviar</button>
+				</form>
+			</div>
+		</div>
+		
+		<!-- Footer -->
 		<footer class="ui inverted vertical footer segment">
-			<div class="ui container">
-				<div class="ui stackable inverted divided equal height stackable grid">
+			<div class="ui stackable grid centered">
+				<div class="row">
 					<div class="four wide column">
 						<h4>Sobre Nosotros</h4>
 						<div class="ui inverted link list">
 							<a class="ui item" href="#">Sitemap</a>
-							<a class="ui item" href="#">Contacta con Nosotros</a>
-						</div>
+							<a class="ui item" href="#contact">Contacta con Nosotros</a>
+						</div>	
 					</div>
 					<div class="four wide column">
 						<h4>Servicios</h4>
 						<div class="ui inverted link list">
-							<a class="ui item" href="#">Páginas Web</a>
-							<a class="ui item" href="#">Aplicaciones móviles</a>
-							<a class="ui item" href="#">Informatización de Negocio</a>
+							<a class="ui item" href="#about">Páginas Web</a>
+							<a class="ui item" href="#about">Aplicaciones móviles</a>
+							<a class="ui item" href="#about">Informatización de Negocio</a>
 						</div>
 					</div>
 					<div class="three wide column">
@@ -311,11 +323,9 @@
 						</div>
 					</div>
 				</div>
-			
-				<div class="ui aligned center">
-					<p>Argan Technologies © 2017  Todos los derechos reservados.</p>
+				<div class="row">
+					<p>Argan Technologies © 2017 Todos los derechos reservados.</p>
 				</div>
-
 			</div>
 		</footer>
 
