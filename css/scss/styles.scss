@@ -1,3 +1,23 @@
+.contact-container {
+  text-align: center;
+  margin-top: 5em;
+  .contact {
+    display: inline-block;
+    padding: 1em 1.5em;
+    text-align: center;
+    border: 1px solid #1b1c1d;
+    color: #1b1c1d;
+    &:hover {
+      border: 1px solid gray;
+      background-color: #1b1c1d;
+      color:white;
+    }
+    a {
+      text-decoration: none;
+      color: #1b1c1d;
+    }
+  }
+}
 .hidden.menu {
       display: none;
 }
@@ -85,7 +105,17 @@
     font-size: 1.5em;
   }
 }
-
+.work-container {
+  position: relative;
+  text-align: center;
+}
+/* Centered text */
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
     
 :root #carbonads-container,
 :root .mw > #rcnt > #center_col > #taw > .c,
